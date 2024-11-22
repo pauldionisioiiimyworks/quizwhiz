@@ -1,0 +1,50 @@
+[
+  {
+    "quizId": 0,
+    "title": "Question 1",
+    "question": "How many legs do a cat have?",
+    "choices": [
+      {
+        "choiceId": 0,
+        "choiceDesc": "A. 1"
+      },
+      {
+        "choiceId": 1,
+        "choiceDesc": "B. 2"
+      },
+      {
+        "choiceId": 2,
+        "choiceDesc": "C. 3"
+      },
+      {
+        "choiceId": 3,
+        "choiceDesc": "D. 4"
+      }
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "quizId": 1,
+    "title": "Question 2",
+    "question": "How color of the sky?",
+    "choices": [
+      {
+        "choiceId": 0,
+        "choiceDesc": "A. Blue"
+      },
+      {
+        "choiceId": 1,
+        "choiceDesc": "B. Green"
+      },
+      {
+        "choiceId": 2,
+        "choiceDesc": "C. Gray"
+      },
+      {
+        "choiceId": 3,
+        "choiceDesc": "D. Purple"
+      }
+    ],
+    "correctAnswer": 0
+  }
+]
