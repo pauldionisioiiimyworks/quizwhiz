@@ -12,7 +12,9 @@ struct ResultView: View {
     
     var body: some View {
         Text("Your score")
-        Text("\(score)/2")
+        .font(.headline)
+        Text("\(score)/5")
+        .font(.subheadline)
         
         NavigationLink{
             QuizView()

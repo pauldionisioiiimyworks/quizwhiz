@@ -2,49 +2,121 @@
   {
     "quizId": 0,
     "title": "Question 1",
-    "question": "How many legs do a cat have?",
+    "question": "What is the capital of France?",
     "choices": [
       {
         "choiceId": 0,
-        "choiceDesc": "A. 1"
+        "choiceDesc": "A. Rome"
       },
       {
         "choiceId": 1,
-        "choiceDesc": "B. 2"
+        "choiceDesc": "B. Madrid"
       },
       {
         "choiceId": 2,
-        "choiceDesc": "C. 3"
+        "choiceDesc": "C. Paris"
       },
       {
         "choiceId": 3,
-        "choiceDesc": "D. 4"
+        "choiceDesc": "D. Berlin"
       }
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "quizId": 1,
     "title": "Question 2",
-    "question": "How color of the sky?",
+    "question": "Which planet is known as the \"Red Planet\"?",
     "choices": [
       {
         "choiceId": 0,
-        "choiceDesc": "A. Blue"
+        "choiceDesc": "A. Earth"
       },
       {
         "choiceId": 1,
-        "choiceDesc": "B. Green"
+        "choiceDesc": "B. Mars"
       },
       {
         "choiceId": 2,
-        "choiceDesc": "C. Gray"
+        "choiceDesc": "C. Venus"
       },
       {
         "choiceId": 3,
-        "choiceDesc": "D. Purple"
+        "choiceDesc": "D. Jupiter"
       }
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
+  },
+  {
+    "quizId": 2,
+    "title": "Question 3",
+    "question": "Who wrote Romeo and Juliet?",
+    "choices": [
+      {
+        "choiceId": 0,
+        "choiceDesc": "A. Charles Dickens"
+      },
+      {
+        "choiceId": 1,
+        "choiceDesc": "B. William Shakespeare"
+      },
+      {
+        "choiceId": 2,
+        "choiceDesc": "C. Jane Austen"
+      },
+      {
+        "choiceId": 3,
+        "choiceDesc": "D. Mark Twain"
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "quizId": 3,
+    "title": "Question 4",
+    "question": "What is the largest mammal in the world?",
+    "choices": [
+      {
+        "choiceId": 0,
+        "choiceDesc": "A. Elephant"
+      },
+      {
+        "choiceId": 1,
+        "choiceDesc": "B. Blue Whale"
+      },
+      {
+        "choiceId": 2,
+        "choiceDesc": "C. Giraffe"
+      },
+      {
+        "choiceId": 3,
+        "choiceDesc": "D. Orca"
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "quizId": 4,
+    "title": "Question 5",
+    "question": "Which country is famous for the dish sushi?",
+    "choices": [
+      {
+        "choiceId": 0,
+        "choiceDesc": "A. China"
+      },
+      {
+        "choiceId": 1,
+        "choiceDesc": "B. Korea"
+      },
+      {
+        "choiceId": 2,
+        "choiceDesc": "C. Japan"
+      },
+      {
+        "choiceId": 3,
+        "choiceDesc": "D. Thailand"
+      }
+    ],
+    "correctAnswer": 2
   }
 ]
