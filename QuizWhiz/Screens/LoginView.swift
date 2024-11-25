@@ -60,6 +60,12 @@ struct LoginView: View {
                 .navigationDestination(isPresented: $isLogin) {
                     QuizView().navigationBarHidden(true)
                 }
+                
+                NavigationLink {
+                    SignupView().navigationBarHidden(true)
+                } label: {
+                    Label("Signup", systemImage: "user")
+                }
             }
             .padding(30)
         }

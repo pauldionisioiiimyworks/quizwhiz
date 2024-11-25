@@ -33,6 +33,17 @@
         }
       }
     },
+    "Login.SignupButton.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signup"
+          }
+        }
+      }
+    },
     "Login.UsernameField.Title" : {
       "localizations" : {
         "en" : {
@@ -42,6 +53,9 @@
           }
         }
       }
+    },
+    "Signup" : {
+
     },
     "Submit" : {
 
