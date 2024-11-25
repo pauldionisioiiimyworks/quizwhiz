@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LoginView: View {
     
@@ -19,9 +20,13 @@ struct LoginView: View {
                 Spacer()
                 
                 VStack {
-                    Image("quizwhiz-logo")
-                    .frame(width: 200, height: 200)
-                    .padding()
+                    Image("quizwhiz-logo-ng")
+                    .resizable()
+                    .frame(width: 250, height: 250)
+                    .foregroundColor(.white)
+                    .padding(20)
+                    .background(.green)
+                    .clipShape(Circle())
                     TextField(
                         LocalizedStringKey("Login.UsernameField.Title"),
                         text: $viewModel.username
@@ -29,7 +34,8 @@ struct LoginView: View {
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .padding(.top, 20)
-                    .font(.title)
+                    .font(.headline)
+                    .foregroundStyle(.green)
                     .fontDesign(.rounded)
                     
                     Divider()
@@ -39,7 +45,8 @@ struct LoginView: View {
                         text: $viewModel.password
                     )
                     .padding(.top, 20)
-                    .font(.title)
+                    .font(.headline)
+                    .foregroundStyle(.green)
                     .fontDesign(.rounded)
                     
                     Divider()
@@ -48,13 +55,24 @@ struct LoginView: View {
                 Spacer()
                 
                 Button(action: {
-                    isLogin = true //Goes to third view
+                    
+                    Auth.auth().signIn(withEmail: viewModel.username, password: viewModel.password) { authResult, error in
+                        
+                        if error != nil {
+                            return
+                        }
+                        
+                        print("Hello \(String(describing: authResult?.user.uid))")
+                        
+                        isLogin = true
+                    }
+                    
                 }) {
                     Text(LocalizedStringKey("Login.LoginButton.Title"))
-                        .font(.system(size: 24, weight: .bold, design: .default))
+                        .font(.system(size: 20, weight: .bold, design: .default))
                         .frame(maxWidth: .infinity, maxHeight: 60)
                         .foregroundColor(Color.white)
-                        .background(Color.cyan)
+                        .background(.green)
                         .cornerRadius(10)
                 }
                 .navigationDestination(isPresented: $isLogin) {
@@ -62,13 +80,16 @@ struct LoginView: View {
                 }
                 
                 NavigationLink {
-                    SignupView().navigationBarHidden(true)
+                    SignupView().navigationBarHidden(false)
                 } label: {
-                    Label("Signup", systemImage: "user")
+                    Label("Signup", systemImage: "")
+                        .font(.headline)
+                    .foregroundColor(.green)
                 }
             }
             .padding(30)
         }
+        .accentColor(.green)
     }
 }
 

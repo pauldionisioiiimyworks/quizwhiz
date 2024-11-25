@@ -56,7 +56,7 @@ struct SignupView: View {
                         .font(.system(size: 24, weight: .bold, design: .default))
                         .frame(maxWidth: .infinity, maxHeight: 60)
                         .foregroundColor(Color.white)
-                        .background(Color.cyan)
+                        .background(.green)
                         .cornerRadius(10)
                 }
                 .navigationDestination(isPresented: $isSignup) {

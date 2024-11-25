@@ -11,20 +11,35 @@ struct ResultView: View {
     var score: Int
     
     var body: some View {
-        Text("Your score")
-        .font(.headline)
-        Text("\(score)/5")
-        .font(.subheadline)
-        
-        NavigationLink{
-            QuizView()
-        } label: {
-            Text("Home")
-                .foregroundStyle(.black)
+        VStack {
+            HStack {
+                VStack {
+                    Text("Your score")
+                        .font(.title)
+                        .foregroundColor(.green)
+                        .bold()
+                    Text("\(score)/5")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .bold()
+                    
+                    NavigationLink{
+                        QuizView()
+                    } label: {
+                        Text(LocalizedStringKey("AGAIN"))
+                            .font(.system(size: 20, weight: .bold, design: .default))
+                            .frame(maxWidth: .infinity, maxHeight: 60)
+                            .foregroundColor(Color.white)
+                            .background(.green)
+                            .cornerRadius(10)
+                    }
+                    .background(.orange)
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                }
                 .padding()
+            }
         }
-        .background(.orange)
-        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+        .padding(20)
     }
 }
 
